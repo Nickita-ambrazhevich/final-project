@@ -1,0 +1,13 @@
+<div class="latest-project">
+            <h2 class="late-title">Latest project</h2>
+            <div class="project-cards">
+                <img src="./pics/Vilas.png" alt="vilas">
+                <div class="yellow-card">
+                    <p class="dubai card">
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nostrum, mollitia?</p>
+                    </p>
+                </div>
+                <img src="./pics/houses.png" alt="houses">
+                <img src="./pics/interior.png" alt="interior">
+            </div>
+        </div>

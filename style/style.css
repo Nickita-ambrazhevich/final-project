@@ -1,0 +1,225 @@
+
+@font-face {
+    font-family: "Gilroy";
+    font-style: normal;
+    font-weight: 400;
+    src: url(../fonts/Gilroy-Regular.ttf);
+}
+@font-face {
+    font-family: "Space Grotesk";
+    font-style: normal;
+    font-weight: 400;
+    src: url(../fonts/SpaceGrotesk-Regular.ttf);
+  }
+
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    color: #FFFFFF;
+}
+body{
+    background-color: #272727;
+    font-family: "Gilroy";
+}
+.header{
+    display: flex;
+    flex-direction: row;
+    color: #FFFFFF;
+    align-items: center;
+    margin: 42px 0 42px;
+    padding: 0 58px 0 58px;
+}
+.main-logo{
+    margin-right: 153px;
+}
+.pages{
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+}
+.pages-links{
+    margin-right: 3rem;
+}
+.book-button{
+    width: 165px;
+    height: 41px;
+    background-color: #FCD54C;
+    color: #272727;
+    font-size: 14px;
+    margin-right: 5rem;
+    margin-left: 43rem;
+}
+.title-photo{
+    position: relative;
+    margin: 0 50px;
+    max-height: 971px;
+}
+h1{
+    z-index: 2;
+    position: absolute;
+    top:360px;
+    left: 384px;
+    font-family: "Space grotesk";
+    color: #FFFFFF;
+    Font-size: 96px;
+
+}
+.yellow-letter{
+    color: #FCD54C;
+}
+.title-line{
+    position: absolute;
+    left: 356px;
+    top:278px;
+}
+.consultation-link{
+    color: #FFFFFF;
+    list-style: none;
+    position: absolute;
+    left: 384px;
+    bottom: 340px;
+}
+.benefits{
+    display: flex;
+    align-items: center;
+    z-index: 2;
+    background-color:#272727;
+    width: 1080px;
+    height: 150px;
+    position: absolute;
+    left:762px;
+    bottom: 0px;
+}
+.benefits-table{
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    justify-content: space-between;
+    color: #FFFFFF;
+    margin-left: 60px;
+    font-size: 60px;
+    
+}
+.benefit-number{
+    display: flex;
+    flex-direction: row;
+}
+.benefit-discription{
+    margin-right: 171px;
+    margin-left: 31px;
+    font-size: 16px;
+}
+.first-number{
+    color:#FCD54C;
+}
+.latest-project{
+    margin-top: 124px;
+}
+.late-title{
+    margin-bottom: 77px;
+    margin-left: 20%;
+    font-size: 48px;
+}
+.yellow-card{
+    width: 430px;
+    height: 573px;
+    background-color: #FCD54C;
+    position: relative;
+}
+
+.project-cards{
+    display: grid;
+    grid-template-areas:
+    'first second third fourth';
+  grid-template-columns: repeat(4, 430px);
+  grid-column-gap: 30px;
+  padding:1%;
+  margin-bottom: 181px;
+}
+.yellow-card-title{
+    color: #272727;
+    position: absolute;
+    top:46px;
+    left: 36px;
+
+    font-size: 32px;
+}
+.yellow-card-discription{
+    position: absolute;
+    color: #272727;
+    top:209px;
+    left: 30px;
+    font-size: 22px;
+    max-width:339px;
+    line-height: 26px;
+}
+.yewllow-card-link{
+    position: absolute;
+    left: 30px;
+    bottom: 43px;
+    color: #272727;
+    font-size: 20px;
+}
+.our-expertise{
+    max-width: 100%;
+    max-width: 730px;
+    position: relative;
+    left: 30%;
+}
+.our-expertise-yellow{
+    color: #FCD54C;
+    margin-bottom:40px;
+}
+.our-expertise-title{
+    font-size: 70px;
+    margin-bottom: 33px;
+}
+.our-expertise-discription{
+    font-size: 18px;
+    margin-bottom: 89px;
+}
+.dubai-video{
+    position: relative;
+    left:10%
+}
+.quote{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 313px;
+    width: 1110px;
+    border: 1px solid #FCD54C;
+    position: relative;
+    left: 20%;
+    margin-bottom: 64px;
+}
+.quote-text{
+    max-width: 917px;
+    font-size: 30px;
+    line-height: 48px;
+}
+.mary-yellow{
+    color: #FCD54C;
+}
+.hotel-pic{
+    display: grid;
+    grid-template-areas:
+    'first second' 
+    'third fourth';
+  grid-template-columns: repeat(2, 543px);
+  grid-template-rows: repeat(2, 312px);
+  grid-column-gap: 23px;
+  grid-row-gap: 70px;
+  position: relative;
+  left: 20%;
+  margin-bottom: 125px;
+}
+.contact-us{
+    height: 400px;
+    width: 1800px;
+    background-image: url(../pics/Rectangle\ 868.png);
+    position: relative;
+    left: 15%;
+}
