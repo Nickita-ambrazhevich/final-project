@@ -18,6 +18,7 @@
     border: 0;
     outline: 0;
     color: #FFFFFF;
+    max-width: 100%;
 }
 body{
     background-color: #272727;
@@ -51,14 +52,11 @@ body{
     margin-right: 5rem;
     margin-left: 43rem;
 }
-.title-photo{
-    position: relative;
-    margin: 0 50px;
-    max-height: 971px;
+.title-screen{
+    display: flex;
 }
 h1{
-    z-index: 2;
-    position: absolute;
+
     top:360px;
     left: 384px;
     font-family: "Space grotesk";
@@ -220,6 +218,77 @@ h1{
     height: 400px;
     width: 1800px;
     background-image: url(../pics/Rectangle\ 868.png);
-    position: relative;
-    left: 15%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+.questions{
+    font-size: 18px;
+    Line-height: 29px;
+    color: #272727;
+    font-weight: 700;
+    margin: 87px 776px 15px 778px;
+}
+.questions-title{
+    font-weight: bold;
+    font-size: 120px;
+    color: #272727;
+}
+.send-emale-form{
+    display: flex;
+    flex-direction: row;
+}
+.send-emale-input{
+    width: 472px;
+    height: 61px;
+    color: #272727;
+}
+.send-emale-button{
+    height: 61px;
+    width: 165px;
+    background-color: #272727;
+}
+.send-emale-input::placeholder{
+    padding: 25px 94px 22px 42px;
+    Opacity: 50%
+}
+.useful-articles-title{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+.useful-articles{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+.useful-articles-cards{
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+}
+.useful-articles-first-card{
+    height: 350px;
+    width: 352px;
+    background-image: url(../pics/Discover\ Architecture.png);
+}
+.useful-articles-second-card{
+    height: 350px;
+    width: 352px;
+    border: 1px solid #FCD54C;
+}
+.useful-articles-third-card{
+    height: 350px;
+    width: 352px;
+    background-image: url(../pics/Discover\ Architecture\ 2.png);
+}
+.flex-card{
+    
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    font-size: 25px;
+    font-weight: bold;
 }
