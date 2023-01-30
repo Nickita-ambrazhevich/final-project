@@ -439,3 +439,42 @@ line-height: 72px;
 .information-links:last-child{
     margin-bottom: 95px;
 }
+
+
+
+
+
+
+.blog-body{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    
+}
+.blog-cards-wrap{
+    display: grid;
+    grid-template-columns: repeat(3, 350px);
+    grid-template-rows: repeat(4, 653px);
+    grid-column-gap: 30px;
+    grid-row-gap: 30px;
+}
+.blog-card-discription{
+    height: 223px;
+    width: auto;
+    border: 1px solid #FCD54C;
+    z-index: 2;
+    padding: 15px 15px 0 15px;
+}
+.blog-card-title{
+    font-family: "Gilroy";
+    font-size: 25px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+.blog-card-text{
+    font-size: 16px;
+    line-height: 26px;
+    color: #929292;
+    margin-bottom: 15px;
+}
