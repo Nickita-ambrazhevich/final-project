@@ -11,6 +11,12 @@
     font-weight: 400;
     src: url(../fonts/SpaceGrotesk-Regular.ttf);
   }
+  @font-face {
+    font-family: "Work-sans";
+    font-style: normal;
+    font-weight: 400;
+    src: url(../fonts/WorkSans-Regular.ttf);
+  }
 
 * {
     margin: 0;
@@ -18,11 +24,19 @@
     border: 0;
     outline: 0;
     color: #FFFFFF;
-    max-width: 100%;
+    max-width: 1802px;
 }
 body{
     background-color: #272727;
     font-family: "Gilroy";
+    display: flex;
+    flex-direction: column;
+}
+.main-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 .header{
     display: flex;
@@ -53,10 +67,13 @@ body{
     margin-left: 43rem;
 }
 .title-screen{
-    display: flex;
+    max-width: 100%;
+    width: 1802px;
+    height: 971px;
+    background-image: url(../pics/title\ pic.png);
+    
 }
 h1{
-
     top:360px;
     left: 384px;
     font-family: "Space grotesk";
@@ -163,8 +180,9 @@ h1{
 .our-expertise{
     max-width: 100%;
     max-width: 730px;
-    position: relative;
-    left: 30%;
+    display: flex;
+    justify-self: center;
+    flex-direction: column;
 }
 .our-expertise-yellow{
     color: #FCD54C;
@@ -190,7 +208,6 @@ h1{
     width: 1110px;
     border: 1px solid #FCD54C;
     position: relative;
-    left: 20%;
     margin-bottom: 64px;
 }
 .quote-text{
@@ -211,17 +228,17 @@ h1{
   grid-column-gap: 23px;
   grid-row-gap: 70px;
   position: relative;
-  left: 20%;
   margin-bottom: 125px;
 }
 .contact-us{
-    height: 400px;
-    width: 1800px;
     background-image: url(../pics/Rectangle\ 868.png);
     display: flex;
     flex-direction: column;
-    justify-content: flex-start;
+    justify-content: center;
     align-items: center;
+    height: 400px;
+    align-self: center;
+    margin-bottom: 140px;
 }
 .questions{
     font-size: 18px;
@@ -238,6 +255,7 @@ h1{
 .send-emale-form{
     display: flex;
     flex-direction: row;
+    align-items:  center;
 }
 .send-emale-input{
     width: 472px;
@@ -257,7 +275,13 @@ h1{
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-start;
+    font-size: 70px;
+}
+.useful-articles-title-link{
+    font-size: 16px;
+    color: #929292;
+    text-decoration: none;
 }
 .useful-articles{
     display: flex;
@@ -268,6 +292,7 @@ h1{
     list-style: none;
     display: flex;
     flex-direction: row;
+    margin-bottom: 226px;
 }
 .useful-articles-first-card{
     height: 350px;
@@ -278,17 +303,139 @@ h1{
     height: 350px;
     width: 352px;
     border: 1px solid #FCD54C;
+    position: relative;
 }
+.second-card-data{
+    font-size: 16px;
+    margin-bottom: 15px;
+    margin: 41px 0 15px 36px ;
+}
+.second-card-title{
+    font-size: 25px;
+    font-weight: bold;
+    margin: 0 64px 28px 38px ;
+}
+.second-card-discription{
+    color: #929292;
+    font-size: 16px;
+    line-height: 26px;
+    width: 280px;
+    height: 122px;
+    margin: 0 36px 52px 35px;
+}
+.second-card-link{
+    margin: 0 0 20px 36px;
+    color: #FCD54C;
+    font-size: 16px;
+}
+
 .useful-articles-third-card{
     height: 350px;
     width: 352px;
-    background-image: url(../pics/Discover\ Architecture\ 2.png);
+    background-image: url(../pics/Discover\ Architecture\ 2.png)
 }
 .flex-card{
-    
+    display: flex;
     flex-direction: column;
     justify-content: flex-end;
-    align-items: center;
-    font-size: 25px;
     font-weight: bold;
+}
+.discover-cardtext{
+    padding-bottom: 20px;
+    text-decoration: none;
+    font-size: 25px;
+}
+.discover-cardtext:hover{
+    font-size: 27px;
+    transition: 0.2s;
+}
+
+.faq{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 122px;
+}
+.Faq-title{
+    font-size: 70px;
+    margin-bottom: 50px;
+}
+.wrap{
+    font-family: "Gilroy";
+    font-size: 18px;
+    line-height: 23px;
+    border-bottom: 1px solid #929292;
+}
+.faq-table{
+    list-style: none;
+    width: 1108px;
+    height: auto;
+}
+label{
+    width: 100%;
+}
+.title{
+display: inline;
+font-style: normal;
+font-weight: 600;
+font-size: 20px;
+line-height: 72px;
+}
+.text{
+    width: 100%;
+    overflow: hidden;
+    height: 0;
+}
+#check{
+    display: none;
+}
+#check:checked~.text{
+    height: auto;
+}
+#check:checked~svg{
+    transform: rotate(180deg);
+    transition: 0.2s;
+}
+.footer-line{
+    border: none; 
+    background-color:#929292;
+    height: 2px; 
+    margin-bottom: 77px;
+    width: 100%;
+    max-width: 1920px;
+}
+.contacts{
+    display: flex;
+    justify-content: center;
+}
+.footer-logo{
+    margin-bottom: 51px;
+}
+.information-table-wrap{
+    display: flex;
+    justify-content: center;
+
+}
+.information-table{
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+}
+.information-categories{
+    display: flex;
+    flex-direction: column;
+    color: #929292;
+    margin: 0 10rem 0 5rem;
+    
+}
+.information-links{
+    text-decoration: none;
+    color: #929292;
+    margin: 0 0 20px 0;
+}
+.information-links:first-child{
+    margin-top: 40px;
+}
+.information-links:last-child{
+    margin-bottom: 95px;
 }
