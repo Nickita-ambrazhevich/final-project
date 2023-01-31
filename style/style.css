@@ -31,6 +31,7 @@ body{
     font-family: "Gilroy";
     display: flex;
     flex-direction: column;
+    max-width: 100%;
 }
 .main-content{
     display: flex;
@@ -477,4 +478,93 @@ line-height: 72px;
     line-height: 26px;
     color: #929292;
     margin-bottom: 15px;
+}
+
+
+.servise-body{
+    width: 100%;
+    max-width: 1920px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+.servise-main-screen{
+    position: relative;
+    margin-left: 4rem;
+    background-image: url(../pics/servise\ main\ pic.png);
+    width: 1800px;
+    height:768px;
+    margin-bottom: 122px;
+}
+.rent-title {
+    position: absolute;
+    margin-top: 533px;
+    margin-left: 345px;
+    z-index: 2;
+    font-size: 60px;
+    font-weight: bold;
+}
+.rent-sub-title{
+    position: absolute;
+    margin-top: 496px;
+    margin-left: 345px;
+    z-index: 2;
+    font-size: 20px;
+    font-family: "Work-sans";
+
+}
+.servise-discription-wrap{
+    display: flex;
+    flex-direction: column;
+    max-width: 1920px;
+    justify-content: center;
+    align-items: center;
+}
+.servise-discription{
+    width: 728px;
+    font-size: 16px;
+    font-family: "Work-sans";
+    color: #929292;
+    line-height: 26px;
+    margin-bottom: 80px;
+}
+.burj-pic{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 82px;
+}
+.method-block{
+    display: flex;
+    flex-direction: column;
+    max-width: 1920px;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 104px;
+}
+.method-discription{
+    width: 728px;
+    font-family: "Work-sans";
+    font-size: 16px;
+    line-height: 26px;
+    color:#929292
+}
+.method-title{
+    font-size: 25px;
+    font-family: "Gilroy";
+    margin-bottom: 50px;
+}
+.paul-quote{
+    display: flex;
+    flex-direction: column;
+    max-width: 1920px;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 104px;
+    border: 4px solid #FCD54C;
+    width: 730px;
+    height: 230px;
+}
+.paul-quote-text{
+    
 }
