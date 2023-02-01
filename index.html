@@ -24,11 +24,16 @@
         </nav>
 
         <button type="button" class="book-button">Book a consultation</button>
-        <a href="tel:+15550100">+1 555-0100</a>
+        <a class="header-tel" href="tel:+15550100">+1 555-0100</a>
     </header>
 
     <main class="main-content">
-        <section class="preview"></section>
+        <section class="preview">
+            <svg class="title-line" width="126" height="387" viewBox="0 0 126 387" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M126 2L2 2V193.5V385H126" stroke="#FCD54C" stroke-width="4"/>
+                </svg>
+            <h1>Weclome Home <br> <span class="yellow-letter">To</span> Luxary</h1>
+        </section>
         <section class="latest-project">
             <h2 class="late-title">Latest project</h2>
             <div class="project-cards"><!--понимаю что здесь должен быть слайдер. Но пока без него-->
@@ -83,7 +88,7 @@
                     nisl pharetra consequat. Nunc in venenatis orci.</p>
             </div>
             <div class="hotel-pic-wrap">
-                <img src="./pics/hotel-room.png" alt="hotel room" title="hotel room">
+                <img src="./pics/hotel room.png" alt="hotel room" title="hotel room">
                 <p>Sed in sem pellentesque, eleifend erat vitae, tincidunt turpis. Pellentesque augue elit, rutrum sit amet
                     commodo vel, porta quis purus. Nullam faucibus, odio eu bibendum auctor, eros dolor aliquet purus, sit
                     amet pellentesque neque est id tortor. In egestas, erat a dapibus dapibus, mi augue ornare lorem, nec
@@ -100,7 +105,7 @@
             <h3 class="questions-title">Contact us</h3>
             <form class="send-emale-form">
                 <input class="send-emale-input" placeholder="Enter your mail" name="user" title=""/>
-                <input class="send-emale-button" type="submit" value="Отправить"/>
+                <input class="send-emale-button" type="submit" value="Send"/>
             </form>
         </section>
 
@@ -135,7 +140,6 @@
 
 
         <section class="faq">
-            <div class="faq">
                 <h3 class="Faq-title">FAQ</h3>
                 <ul class="faq-table">
                     <li>
@@ -234,7 +238,6 @@
                         </label>
                     </li>
                 </ul>
-            </div>
         </section>
 
 
@@ -289,7 +292,7 @@
                 </li>
             </ul>
         </div>
-        <p>Copyright © 2022 Dubai Realty</p>
+        <p class="copy-right">Copyright © 2022 Dubai Realty</p>
     </footer>
 </body>
 </html>

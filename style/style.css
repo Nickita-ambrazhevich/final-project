@@ -61,6 +61,9 @@ body {
   display: flex;
   flex-direction: row;
 }
+.pages:first-child{
+  margin-left: 153px;
+}
 
 .pages-links {
   margin-right: 3rem;
@@ -73,15 +76,21 @@ body {
   color: #272727;
   font-size: 14px;
   margin: 0 20px 0 auto;
+  font-weight: bold;
 }
 
 .preview {
   max-width: 100%;
   width: 100%;
   padding-top: 53.8%;
-  background: url(../pics/title-pic.png) no-repeat;
+  background: url(../pics/title\ pic.png) no-repeat;
   background-position: center;
   background-size: cover;
+}
+.header-tel{
+  text-decoration: none;
+  color: #fff;
+  font-size: 16px;
 }
 
 h1 {
@@ -89,6 +98,7 @@ h1 {
   left: 384px;
   font-family: "Space grotesk", sans-serif;
   font-size: 96px;
+  position: absolute;
 }
 
 .yellow-letter {
@@ -159,6 +169,7 @@ h1 {
   width: 100%;
   background-color: #FCD54C;
   position: relative;
+  padding: 46px 0 0 30px;
 }
 
 .project-cards {
@@ -175,28 +186,28 @@ h1 {
 
 .yellow-card-title {
   color: #272727;
-  position: absolute;
   top: 46px;
   left: 36px;
   font-size: 32px;
+  margin-bottom: 60px;
 }
 
 .yellow-card-discription {
-  position: absolute;
   color: #272727;
   top: 209px;
   left: 30px;
   font-size: 22px;
   max-width: 339px;
   line-height: 26px;
+  margin-bottom: 30px ;
 }
 
 .yewllow-card-link {
-  position: absolute;
   left: 30px;
   bottom: 43px;
   color: #272727;
   font-size: 20px;
+  
 }
 
 .our-expertise {
@@ -256,7 +267,7 @@ h1 {
 }
 
 .contact-us {
-  background-image: url(../pics/form-bg.png);
+  background-image: url(../pics/Rectangle\ 868.png);
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -297,6 +308,8 @@ h1 {
   height: 61px;
   width: 165px;
   background-color: #272727;
+  color: #fff;
+  font-size: 14px;
 }
 
 .send-emale-input::placeholder {
@@ -307,6 +320,8 @@ h1 {
   font-size: 16px;
   color: #929292;
   text-decoration: none;
+  text-decoration: none;
+  color: #fff;
 }
 
 .useful-articles {
@@ -327,7 +342,8 @@ h1 {
 .useful-articles-first-card {
   height: 350px;
   width: 352px;
-  background-image: url(../pics/discover-architecture.png);
+  background-image: url(../pics/Discover\ Architecture.png);
+  margin-right: 31px;
 }
 
 .useful-articles-second-card {
@@ -335,6 +351,8 @@ h1 {
   width: 352px;
   border: 1px solid #FCD54C;
   position: relative;
+  margin-right: 31px;
+  
 }
 
 .second-card-data {
@@ -361,12 +379,13 @@ h1 {
   margin: 0 0 20px 36px;
   color: #FCD54C;
   font-size: 16px;
+  text-decoration: none;
 }
 
 .useful-articles-third-card {
   height: 350px;
   width: 352px;
-  background-image: url(../pics/discover-architecture-2.png)
+  background-image: url(../pics/Discover\ Architecture\ 2.png)
 }
 
 .flex-card {
@@ -380,6 +399,8 @@ h1 {
   padding-bottom: 20px;
   text-decoration: none;
   font-size: 25px;
+  text-decoration: none;
+  color: #fff;
 }
 
 .discover-cardtext:hover {
@@ -391,7 +412,9 @@ h1 {
   width: 100%;
   display: flex;
   justify-content: center;
+  flex-direction: column;
   margin-bottom: 122px;
+  padding: 50px calc(50% - 520px);
 }
 
 .Faq-title {
@@ -473,7 +496,7 @@ label {
   display: flex;
   flex-direction: column;
   color: #929292;
-  margin: 0 10rem 0 5rem;
+  margin-right: auto;
 }
 
 .information-links {
@@ -489,6 +512,17 @@ label {
 .information-links:last-child {
   margin-bottom: 95px;
 }
+.copy-right{
+  padding: 0 calc(50% - 100px);
+
+}
+
+
+
+
+
+
+
 
 .blog-body {
   display: flex;
@@ -496,13 +530,21 @@ label {
   justify-content: flex-start;
   align-items: center;
 }
-
+.blog-body-title{
+  left: 0;
+  font-size: 60px;
+  line-height: 80px;
+}
 .blog-cards-wrap {
   display: grid;
   grid-template-columns: repeat(3, 350px);
   grid-template-rows: repeat(4, 653px);
   grid-column-gap: 30px;
   grid-row-gap: 30px;
+  margin-bottom: 20px;
+}
+.blog-cards-wrap:last-child{
+  margin-bottom: 250px;
 }
 
 .blog-card-discription {
@@ -517,7 +559,6 @@ label {
   font-family: "Gilroy", sans-serif;
   font-size: 25px;
   font-weight: bold;
-  margin-bottom: 20px;
 }
 
 .blog-card-text {
@@ -526,10 +567,22 @@ label {
   color: #929292;
   margin-bottom: 15px;
 }
+.blog-card-link{
+  text-decoration: none;
+  color: #fff;
+  font-size: 16px;
+}
+
+
+
+
+
+
+
+
+
 
 .servise-body {
-  width: 100%;
-  max-width: 1920px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -537,12 +590,12 @@ label {
 }
 
 .servise-main-screen {
-  position: relative;
-  margin-left: 4rem;
-  background-image: url(../pics/servise-pic.png);
-  width: 1800px;
-  height: 768px;
-  margin-bottom: 122px;
+  max-width: 100%;
+  width: 100%;
+  padding-top: 53.8%;
+  background: url(../pics/servise\ main\ pic.png) no-repeat;
+  background-position: center;
+  background-size: cover;
 }
 
 .rent-title {
@@ -569,7 +622,9 @@ label {
   max-width: 1920px;
   justify-content: center;
   align-items: center;
+  margin-bottom: 104px;
 }
+
 
 .servise-discription {
   width: 728px;
