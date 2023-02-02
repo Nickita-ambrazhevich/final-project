@@ -675,3 +675,140 @@ label {
   width: 730px;
   height: 230px;
 }
+
+
+
+
+
+.category-preview{
+  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 100%;
+  width: 100%;
+  padding-top: 53.8%;
+  background: url(../pics/category\ main\ screen.png) no-repeat;
+  background-position: center;
+  background-size: cover;
+  
+}
+.category-preview-title{
+  top:100px;
+  font-size: 60px;
+  font-family: "Gilroy";
+  line-height: 80px;
+  text-align: center;
+}
+.all-apartments-category{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  max-width: 100%;
+  padding: 50px calc(50% - 900px);
+}
+.all-apartments-category:last-child{
+  margin-bottom: 184px;
+
+}
+.all-apartments-category-title{
+  font-size: 60px;
+  text-align: center;
+  margin-bottom: 84px;
+}
+.all-apartments-category-cards{
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-column-gap: 30px;
+  margin-bottom: 181px;
+  
+}
+.all-apartments-category-cards-first-card{
+  background-image: url(../pics/townhouse\ card.png);
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+.all-apartments-card-text{
+  font-size: 48px;
+  margin-bottom: 137px;
+  text-decoration:none;
+  color: #fff;
+}
+.all-apartments-card-text:hover {
+  font-size: 52px;
+  transition: 0.2s;
+}
+.all-apartments-category-cards-second-card{
+  background-image: url(../pics/villa\ card.png);
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+.all-apartments-category-cards-third-card{
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  background-image: url(../pics/comertial\ card.png);
+  height: 433px;
+}
+.best-offers{
+display: flex;
+flex-direction: column;
+justify-content: flex-start;
+align-items: center;
+}
+.category-cards-wrap:last-child{
+  margin-bottom: 210px;
+
+}
+.best-offers-title{
+  margin-bottom: 41px;
+  font-size: 60px;
+}
+.category-cards-wrap{
+display: grid;
+  grid-template-columns: repeat(3, 426px);
+  grid-template-rows: repeat(4, 877px);
+  grid-column-gap: 30px;
+  grid-row-gap: 30px;
+  margin-bottom: 20px;
+}
+.offer-card-discription{
+height: 296px;
+width: auto;
+border: 1px solid #FCD54C;
+z-index: 2;
+padding: 39px 15px 0 38px;}
+
+.offer-yellow-part{
+  background-color: #FCD54C;
+  color: #000000;
+}
+.offer-card-title{
+  margin-bottom: 25px;
+  font-size: 25px;
+  line-height: 32px;
+  font-weight: bold;
+}
+.appartments{
+  display: flex;
+  flex-direction: column;
+  padding: 0 calc(50% - 365px);
+  margin-bottom: 161px;
+}
+.appartments-title{
+  font-size:60px;
+  margin-bottom: 50px;
+}
+.appartments-text{
+  font-size: 16px;
+  color:#929292;
+  line-height:26px;
+}
+.appartments-sub-title{
+  font-size: 25px;
+  margin: 80px 0 50px 0;
+}
