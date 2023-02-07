@@ -596,33 +596,30 @@ label {
   background: url(../pics/servise\ main\ pic.png) no-repeat;
   background-position: center;
   background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0   calc(50% - 100px) 0;
+  height: 768px;
+  margin-bottom: 122px;
+  
 }
 
+
 .rent-title {
-  position: absolute;
-  margin-top: 533px;
-  margin-left: 345px;
   z-index: 2;
   font-size: 60px;
   font-weight: bold;
+  width: 660px;
 }
 
-.rent-sub-title {
-  position: absolute;
-  margin-top: 496px;
-  margin-left: 345px;
-  z-index: 2;
-  font-size: 20px;
-  font-family: "Work-sans", sans-serif;
-}
 
-.servise-discription-wrap {
+.servise-discription-wrap{
   display: flex;
   flex-direction: column;
-  max-width: 1920px;
   justify-content: center;
-  align-items: center;
-  margin-bottom: 104px;
+  margin: 0 auto;
 }
 
 
@@ -633,6 +630,10 @@ label {
   color: #929292;
   line-height: 26px;
   margin-bottom: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
 }
 
 .burj-pic {
@@ -647,6 +648,7 @@ label {
   max-width: 1920px;
   justify-content: center;
   align-items: center;
+  margin: 0 auto;
   margin-bottom: 104px;
 }
 
@@ -674,31 +676,129 @@ label {
   border: 4px solid #FCD54C;
   width: 730px;
   height: 230px;
+  margin-bottom: 122px;
 }
+
+.quote-text{
+  font-size: 20px;
+}
+.quote-author{
+  font-size: 16px;
+  line-height: 16px;
+}
+.quote-author-sub{
+  font-size: 16px;
+  color:#929292;
+  line-height: 16px;
+}
+.category-beach-pics-wrap{
+  display: flex;
+  justify-content: center;
+
+}
+.category-beach-pics-grid{
+  display: grid;
+  grid-template-columns: 540px 540px;
+  grid-template-rows: 302px 302px;
+  grid-column-gap: 30px;
+  grid-row-gap: 30px;
+  margin-bottom: 123px;
+}
+.preview-grid-pics:nth-child(3){
+  grid-column: 2 / 3;
+  grid-row: 1 / 3;
+}
+.service-benefint-wrap{
+  display: flex;
+  justify-content: center;
+  margin-bottom: 94px;
+
+}
+.service-benefits-table{
+  display: flex;
+  flex-direction: row;
+}
+.benefits-title{
+  display: flex;
+  font-size: 60px;
+  color: #FCD54C;
+  font-weight: bold;
+  text-align: center;
+  align-items: center;
+  margin-right: 24px;
+}
+.benefits-text{
+  color: #fff;
+  font-size: 16px;
+  line-height: 21px;
+  margin-right: 90px;
+  margin-left: 24px;
+  
+}
+.ul:not(p){
+  margin-right: 90px;
+}
+.challeng-text-wrap{
+  margin: 0 auto;
+  max-width: 730px;
+  display: flex;
+  justify-self: center;
+  flex-direction: column;
+  margin-bottom: 100px;
+
+}
+.challange-tiitle{
+  margin-bottom: 50px;
+  font-size: 20px;
+}
+.challange-text{
+  margin-bottom: 46px;
+}
+.challeng-table{
+  box-sizing: border-box;
+}
+.horisontal-line{
+  border-bottom: 1px solid #929292;
+  margin-bottom: 65px;
+}
+.challange-text-sub , .challange-text{
+  font-size: 16px;
+  color: #929292;
+}
+  
+
 
 
 
 
 
 .category-preview{
-  
+  margin: 0 auto;
   display: flex;
-  justify-content: center;
-  align-items: center;
-  max-width: 100%;
+  max-width:1920px ;
   width: 100%;
   padding-top: 53.8%;
   background: url(../pics/category\ main\ screen.png) no-repeat;
   background-position: center;
   background-size: cover;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 140px;
+  padding: 50px calc(50% - 800px);
+  height: 768px;
+
+  
+  
   
 }
 .category-preview-title{
-  top:100px;
   font-size: 60px;
   font-family: "Gilroy";
   line-height: 80px;
   text-align: center;
+  padding: 0   calc(50% - 100px) 0;
+  box-sizing: border-box;
 }
 .all-apartments-category{
   display: flex;
@@ -811,4 +911,90 @@ padding: 39px 15px 0 38px;}
 .appartments-sub-title{
   font-size: 25px;
   margin: 80px 0 50px 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.contact-preview{
+  padding: 0 calc(50% - 900px);
+  position: relative;
+  margin-bottom: 211px;
+
+}
+.contact-card{
+  position: absolute;
+  width: 544px;
+  height: 605px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  background-color:#272727;
+  padding: 90px;
+  top: 82px;
+  left: 340px;
+}
+.contact-card-title{
+  font-size: 30px;
+  margin-bottom: 34px;
+}
+.contact-card-adress{
+  font-size: 16px;
+  color: #929292;
+  margin-bottom: 61px;
+}
+.contact-card-tel{
+  font-size: 30px;
+  color: #fff;
+  margin-bottom: 93px;
+}
+.contact-card-email{
+  font-size: 16px;
+  color: #fff;
+  margin-bottom: 30px;
+  z-index: 2;
+}
+.contact-form-wrap{
+  pad: 0 calc(50% - 555px);
+  max-width: 410px;
+  width: 100%;
+}
+.send-name-input-contact{
+  margin-right: 30px;
+}
+
+.contact-form-input{
+  border: 1px solid #929292;
+  width: 350px;
+  height: 50px;
+  padding: 18px;
+  background-color: #ffffff00;
+}
+.send-message-input-contact{
+  width: 1110px;
+  height: 218px;
+}
+
+.book-button {
+  width: 165px;
+  height: 41px;
+  background-color: #FCD54C;
+  color: #272727;
+  font-size: 14px;
+  margin: 0 20px 0 auto;
+  font-weight: bold;
 }
