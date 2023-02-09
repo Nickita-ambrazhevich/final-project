@@ -969,12 +969,24 @@ padding: 39px 15px 0 38px;}
   z-index: 2;
 }
 .contact-form-wrap{
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  max-width: 1110px;
+  margin-bottom: 157px;
+}
+.contact-form{
   pad: 0 calc(50% - 555px);
   max-width: 410px;
   width: 100%;
-}
-.send-name-input-contact{
-  margin-right: 30px;
+  display: grid;
+  grid-template-areas: 
+   "name emale subject"
+   "message message message";
+   grid-template-rows: 50px 218px;
+  grid-template-columns: 350px 350px 350px;
+  grid-column-gap: 30px;
+  grid-row-gap:30px;
 }
 
 .contact-form-input{
@@ -995,6 +1007,22 @@ padding: 39px 15px 0 38px;}
   background-color: #FCD54C;
   color: #272727;
   font-size: 14px;
-  margin: 0 20px 0 auto;
+  margin: 30px 20px 0 auto;
   font-weight: bold;
 }
+.send-name{
+  margin-right: 30px;
+}
+.send-emale{
+  display: block;
+  grid-area: emale;
+  margin-right: 30px;
+}
+
+
+
+
+
+
+
+
