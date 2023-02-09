@@ -216,10 +216,9 @@ h1 {
 .yellow-card {
   width: 100%;
   background-color: #FCD54C;
-  position: relative;
   padding: 46px 0 0 30px;
-  max-width: 430px;
-  max-width: 573px;
+  height: 575px;
+  width: 426px;
   box-sizing: border-box;
 }
 
@@ -848,7 +847,7 @@ padding: 50px calc(50% - 520px);
   margin: 0 auto;
   display: flex;
   max-width:1920px ;
-  width: 100%;
+  width: 95%;
   padding-top: 53.8%;
   background: url(../pics/category\ main\ screen.png) no-repeat;
   background-position: center;
@@ -859,10 +858,6 @@ padding: 50px calc(50% - 520px);
   margin-bottom: 140px;
   padding: 50px calc(50% - 800px);
   height: 768px;
-
-  
-  
-  
 }
 .category-preview-title{
   font-size: 60px;
@@ -879,6 +874,7 @@ padding: 50px calc(50% - 520px);
   align-items: center;
   max-width: 100%;
   padding: 50px calc(50% - 900px);
+  
 }
 .all-apartments-category:last-child{
   margin-bottom: 184px;
@@ -902,6 +898,8 @@ padding: 50px calc(50% - 520px);
   display: flex;
   justify-content: center;
   align-items: flex-end;
+  width: 426px;
+  height: 433px;
 }
 .all-apartments-card-text{
   font-size: 48px;
@@ -918,6 +916,9 @@ padding: 50px calc(50% - 520px);
   display: flex;
   justify-content: center;
   align-items: flex-end;
+  width: 426px;
+  height: 433px;
+
 }
 .all-apartments-category-cards-third-card{
   display: flex;
@@ -925,6 +926,14 @@ padding: 50px calc(50% - 520px);
   align-items: flex-end;
   background-image: url(../pics/comertial\ card.png);
   height: 433px;
+  width: 426px;
+}
+.yellow-card-category{
+  height: 433px;
+  width: 426px;
+  box-sizing: border-box;
+  background-color: #FCD54C;
+  padding: 30px;
 }
 .best-offers{
 display: flex;
@@ -1097,18 +1106,41 @@ padding: 39px 15px 0 38px;}
 
 
 @media(max-width:1800px){
-  .project-cards {
-    grid-template-columns: repeat(2, 430px);
-    padding: 0 calc(50% - 452px);
-
+.project-cards {
+  grid-template-columns: repeat(2, 430px);
+  padding: 0 calc(50% - 452px);
 }
+.all-apartments-category-cards {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-column-gap: 30px;
+  margin-bottom: 181px;
+  grid-template-rows:433px 433px; 
+  grid-row-gap: 30px;
+  padding: 50px calc(50% - 450px);
 }
 .late-title {
   margin-bottom: 77px;
   font-size: 48px;
   padding: 0 calc(50% - 452px);
 }
-
+.contact-us {
+  width: 90%;
+}
+.category-cards-wrap{
+  display: grid;
+    grid-template-columns: repeat(2, 426px);
+    grid-template-rows: repeat(4, 877px);
+    grid-column-gap: 30px;
+    grid-row-gap: 30px;
+    margin-bottom: 20px;
+}
+.contact-us {
+  width: 90%;
+margin: 0 auto;
+}
+}
 @media(max-width:1200px){
 .contact-us {
   width: 90%;
@@ -1117,19 +1149,43 @@ padding: 39px 15px 0 38px;}
   display: grid;
   grid-template-columns: repeat(1,300px);
 }
+.category-beach-pics-grid{
+display: block;
+}
+.beadh-img{
+  margin-bottom: 30px;
+  height: 333px;
+  width: 540px;
+}
+.burj-img{
+  width: 728px;
+}
+.quote{
+  max-width: 728px;
+  width: 100%;
+  margin: 0 auto;
+  margin-bottom: 60px;
+}
+.quote-text {
+  font-size: 20px;
+  line-height: 30px;
+}
+.challeng-text-wrap {
+  width: 500px;
+}
 }
 @media(max-width:1161px){
   .useful-articles-cards{
-    flex-direction: column;
+  flex-direction: column;
   }
   .flex-card , .useful-articles-second-card   {
-    margin: 30px 0 0 0;
+  margin: 30px 0 0 0;
   }
   .project-cards {
-    width: 100%;
-    display: grid;
-    grid-template-columns: repeat(1, 430px);
-    padding: 0 calc(50% - 226px);
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(1, 430px);
+  padding: 0 calc(50% - 226px);
 }
 .yellow-card {
   height: 572px;
@@ -1137,8 +1193,7 @@ padding: 39px 15px 0 38px;}
 }
 @media(max-width:925px){
   h1 {
-    font-family: "Space grotesk", sans-serif;
-    font-size: 60px;
+  font-size: 60px;
 }
 .title-line {
   max-height: 200px;
@@ -1182,16 +1237,10 @@ header{
 .pages{
   display: none;
 }
-.quote{
-  width: 300px;
-}
-.quote-text {
-  font-size: 20px;
-  line-height: 30px;
-}
 .useful-articles-title{
   font-size: 25px;
   width: 480px;
+  margin-bottom: 0;
 }
 .Faq-title {
   font-size: 25px;
@@ -1199,7 +1248,6 @@ header{
 .title {
   font-size: 16px;
 }
-
 footer{
  display: none;
   }
@@ -1235,7 +1283,6 @@ footer{
   grid-template-columns: repeat(1, 300px);
   padding: 0 calc(50% - 150px);
 }
-
 .late-title {
   font-size: 30px;
 }
@@ -1249,7 +1296,6 @@ h1 {
 .preview{
   max-height: 500px;
 }
-
 .flex-card  {
   max-width: 300px;
 }
@@ -1283,4 +1329,43 @@ h1 {
 }
 .second-card-discription {
   margin: 0px 0px 23px 9px;
+}
+.service-benefits-table {
+  display: flex;
+  flex-direction: column;
+}
+}
+@media(max-width:750px){
+.category-beach-pics-wrap{
+  width: 300px;
+  margin: 0 auto;
+}
+.challeng-text-wrap {
+    width: 300px;
+}
+  .rent-title{
+    font-size: 30px;
+    margin: 0 auto;
+  }
+  .servise-discription{
+    max-width: 300px;
+  }
+  .burj-img{
+  width: 300px;
+  }
+  .method-discription{
+    width: 300px;
+  }
+  .quote-text , .beadh-img , .challange-text ,
+  .challange-text-sub{
+    width: 300px;
+    text-align: center;
+  }
+  .quote{
+    width: 300px;
+    margin: 0 auto 60px;
+  }
+  .method-block {
+  max-width: 300pxpx;
+}
 }
