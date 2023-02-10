@@ -1147,7 +1147,7 @@ margin: 0 auto;
 }
 .hotel-pic {
   display: grid;
-  grid-template-columns: repeat(1,300px);
+  grid-template-columns: repeat(1,730px);
 }
 .category-beach-pics-grid{
 display: block;
@@ -1173,6 +1173,11 @@ display: block;
 .challeng-text-wrap {
   width: 500px;
 }
+.hotel-pic-img{
+  width: 730px;
+}
+.best-offers{
+}
 }
 @media(max-width:1161px){
   .useful-articles-cards{
@@ -1189,6 +1194,7 @@ display: block;
 }
 .yellow-card {
   height: 572px;
+  width: 430px;
 }
 }
 @media(max-width:925px){
@@ -1272,7 +1278,6 @@ footer{
   height: 40px;
 }
 .hotel-pic-wrap {
-  width: 300px;
   text-align: center;
   padding: 0 calc(50% - 150px);
 }
@@ -1334,6 +1339,10 @@ h1 {
   display: flex;
   flex-direction: column;
 }
+.yellow-card {
+  height: 572px;
+  width: 300px;
+}
 }
 @media(max-width:750px){
 .category-beach-pics-wrap{
@@ -1367,5 +1376,12 @@ h1 {
   }
   .method-block {
   max-width: 300pxpx;
+}
+.hotel-pic {
+  display: grid;
+  grid-template-columns: repeat(1,300px);
+}
+.hotel-pic-img{
+  width: 300px;
 }
 }
