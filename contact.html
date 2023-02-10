@@ -21,14 +21,28 @@
                 <li class="pages-links">Contact</li>
             </ul>
         </nav>
-
         <button type="button" class="book-button">Book a consultation</button>
         <a class="header-tel" href="tel:+15550100">+1 555-0100</a>
+        <div class="hamburger-menu">
+            <input id="menu__toggle" type="checkbox" />
+            <label class="menu__btn" for="menu__toggle">
+              <span></span>
+            </label>
+        
+            <ul class="menu__box">
+              <li><a class="menu__item" href="#">Buy</a></li>
+                    <li><a class="menu__item" href="#">Blog</a></li>
+                    <li><a class="menu__item" href="#">Aboute us</a></li>
+                    <li><a class="menu__item" href="#">Contact</a></li>
+            </ul>
+          </div>
     </header>
 <main>
     <section class="contact-preview">
-        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d48611.24148100804!2d55.14097778708248!3d25.10009630298215!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sru!2sby!4v1675795989102!5m2!1sru!2sby" width="1800" height="768" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-        <div class="contact-card">
+        <div class="map">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d51506.69346594481!2d55.10443921041599!3d25.0885092705219!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e5f43348a67e24b%3A0xff45e502e1ceb7e2!2z0JHRg9GA0LTQti3QpdCw0LvQuNGE0LA!5e0!3m2!1sru!2sby!4v1676066404636!5m2!1sru!2sby" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        
+        <div class="contact-card" >
             <h4 class="contact-card-title">Dubai,<span class="yellow-letter">UAE</span></h4>
             <p class="contact-card-adress">269 King Str, 05th Floor, Utral Hosue Building, 
             Dubai, VIC 3000, UAE.</p>
@@ -37,8 +51,19 @@
             <p class="work-hours">Work Hours:Monday - Friday : 08h00 - 17h30
             </p>
         </div>
+    </div> 
     </section>
+    <div  class="contact-card-adaptive">
+        <h4 class="contact-card-title">Dubai,<span class="yellow-letter">UAE</span></h4>
+        <p class="contact-card-adress">269 King Str, 05th Floor, Utral Hosue Building, 
+        Dubai, VIC 3000, UAE.</p>
+        <p class="contact-card-tel">+99 (0) 344 956 4050</p>
+        <p class="contact-card-email">Email: info@sparch.co</p>
+        <p class="work-hours">Work Hours:Monday - Friday : 08h00 - 17h30
+        </p>
+    </div>
     <section class="contact-form-wrap">
+        <h3 class="contact-form-title"><span class="yellow-letter">Be in Touch </span> with us</h3>
         <form class="contact-form" method="post" action="form.php">
          <span class="send-name"><input class="send-name-input-contact contact-form-input" placeholder="Name" name="user" title=""/></span> 
          <span class="send-emale"><input class="send-emale-input-contact contact-form-input" placeholder="Email" name="emale" title=""/></span> 
