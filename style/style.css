@@ -4,21 +4,18 @@
   font-weight: 400;
   src: url(../fonts/Gilroy-Regular.ttf);
 }
-
 @font-face {
   font-family: "Space Grotesk";
   font-style: normal;
   font-weight: 400;
   src: url(../fonts/SpaceGrotesk-Regular.ttf);
 }
-
 @font-face {
   font-family: "Work-sans";
   font-style: normal;
   font-weight: 400;
   src: url(../fonts/WorkSans-Regular.ttf);
 }
-
 * {
   margin: 0;
   padding: 0;
@@ -30,28 +27,27 @@
 .body{
   overflow: hidden;
 }
-
 section {
   width: 100%;
 }
-
 li {
   list-style: none;
 }
-
+a{
+  text-decoration: none;
+  color: #929292;
+}
 body {
   background-color: #272727;
   font: 400 14px/ 1.4 "Gilroy", sans-serif;
   color: #fff;
 }
-
 .main-content {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
-
 .header {
   width: 100%;
   padding: 0 calc(50% - 800px);
@@ -60,7 +56,6 @@ body {
   height: 100px;
   grid-template-columns: repeat(2, auto) 1fr auto;
 }
-
 .pages {
   display: flex;
   flex-direction: row;
@@ -68,11 +63,12 @@ body {
 .pages:first-child{
   margin-left: 153px;
 }
-
 .pages-links {
   margin-right: 3rem;
+  text-decoration: none;
+  font-size: 20px;
+  color: #929292;
 }
-
 .book-button {
   width: 165px;
   height: 41px;
@@ -179,40 +175,34 @@ body {
   text-decoration: none;
   color: #fff;
   font-size: 16px;
+  margin: auto ;
 }
-
 h1 {
   font-family: "Space grotesk", sans-serif;
   font-size: 96px;}
-
 .yellow-letter {
   color: #FCD54C;
 }
-
 .title-line {
   max-height: 383px;
 }
-
 .consultation-link {
   color: #fff;
   position: absolute;
   left: 384px;
   bottom: 340px;
 }
-
 .latest-project {
   margin-top: 124px;
 }
 .latest-project-card{
   max-width: 430px;
 }
-
 .late-title {
   margin-bottom: 77px;
   font-size: 48px;
   padding: 0 calc(50% - 904px);
 }
-
 .yellow-card {
   width: 100%;
   background-color: #FCD54C;
@@ -221,7 +211,6 @@ h1 {
   width: 426px;
   box-sizing: border-box;
 }
-
 .project-cards {
   width: 100%;
   display: grid;
@@ -231,11 +220,9 @@ h1 {
   grid-row-gap:30px;
   padding: 0 calc(50% - 904px);
 }
-
 .project-cards > img {
   width: 100%;
 }
-
 .yellow-card-title {
   color: #272727;
   top: 46px;
@@ -243,7 +230,6 @@ h1 {
   font-size: 32px;
   margin-bottom: 60px;
 }
-
 .yellow-card-discription {
   color: #272727;
   top: 209px;
@@ -253,49 +239,41 @@ h1 {
   line-height: 26px;
   margin-bottom: 30px ;
 }
-
 .yewllow-card-link {
   left: 30px;
   bottom: 43px;
   color: #272727;
   font-size: 20px;
-  
 }
-
 .our-expertise {
   max-width: 730px;
   display: flex;
   justify-self: center;
   flex-direction: column;
 }
-
 .our-expertise-yellow {
   color: #FCD54C;
   margin-bottom: 40px;
+  font-size: 20px;
 }
-
 .our-expertise-title {
   font-size: 70px;
   margin-bottom: 33px;
 }
-
 .our-expertise-discription {
   font-size: 18px;
   margin-bottom: 89px;
 }
-
 .dubai-video {
   position: relative;
   left: 10%
 }
-
 .quote {
   display: flex;
   align-items: center;
   justify-content: center;
   margin-bottom: 64px;
 }
-
 .quote-text {
   max-width: 1010px;
   font-size: 30px;
@@ -303,11 +281,9 @@ h1 {
   border: 1px solid #FCD54C;
   padding: 55px;
 }
-
 .mary-yellow {
   color: #FCD54C;
 }
-
 .hotel-pic {
   display: grid;
   grid-template-columns: repeat(2, 543px);
@@ -317,7 +293,6 @@ h1 {
   justify-content: center;
   align-items: center;
 }
-
 .contact-us {
   background-image: url(../pics/Rectangle\ 868.png);
   display: flex;
@@ -328,7 +303,6 @@ h1 {
   padding: 50px calc(50% - 800px);
   width: 100%;
 }
-
 .questions {
   font-size: 18px;
   Line-height: 29px;
@@ -336,26 +310,22 @@ h1 {
   font-weight: 700;
   margin-bottom: 30px;
 }
-
 .questions-title {
   font-weight: bold;
   font-size: 120px;
   color: #272727;
 }
-
 .send-emale-form {
   display: flex;
   flex-direction: row;
   align-items: center;
 }
-
 .send-emale-input {
   width: 472px;
   height: 61px;
   color: #272727;
   padding: 0 15px;
 }
-
 .send-emale-button {
   height: 61px;
   width: 165px;
@@ -363,7 +333,6 @@ h1 {
   color: #fff;
   font-size: 14px;
 }
-
 .send-emale-input::placeholder {
   opacity: 50%
 }
@@ -383,7 +352,6 @@ h1 {
   text-decoration: none;
   color: #fff;
 }
-
 .useful-articles {
   display: flex;
   width: 100%;
@@ -392,20 +360,17 @@ h1 {
   align-items: center;
   padding: 50px calc(50% - 800px);
 }
-
 .useful-articles-cards {
   display: flex;
   justify-content: center;
   align-items: center;
 }
-
 .useful-articles-first-card {
   height: 350px;
   width: 352px;
   background-image: url(../pics/Discover\ Architecture.png);
   margin-right: 31px;
 }
-
 .useful-articles-second-card {
   height: 350px;
   width: 350px;
@@ -414,18 +379,15 @@ h1 {
   margin-right: 31px;
   
 }
-
 .second-card-data {
   font-size: 16px;
   margin: 41px 0 15px 36px;
 }
-
 .second-card-title {
   font-size: 25px;
   font-weight: bold;
   margin: 0 64px 28px 38px;
 }
-
 .second-card-discription {
   color: #929292;
   font-size: 16px;
@@ -434,27 +396,23 @@ h1 {
   height: 122px;
   margin: 0 36px 52px 35px;
 }
-
 .second-card-link {
   margin: 0 0 20px 36px;
   color: #FCD54C;
   font-size: 16px;
   text-decoration: none;
 }
-
 .useful-articles-third-card {
   height: 350px;
   width: 352px;
   background-image: url(../pics/Discover\ Architecture\ 2.png)
 }
-
 .flex-card {
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
   font-weight: bold;
 }
-
 .discover-cardtext {
   padding-bottom: 20px;
   text-decoration: none;
@@ -462,12 +420,10 @@ h1 {
   text-decoration: none;
   color: #fff;
 }
-
 .discover-cardtext:hover {
   font-size: 27px;
   transition: 0.2s;
 }
-
 .faq {
   width: 100%;
   display: flex;
@@ -476,27 +432,22 @@ h1 {
   margin-bottom: 122px;
   padding: 50px calc(50% - 520px);
 }
-
 .Faq-title {
   font-size: 70px;
   margin-bottom: 50px;
 }
-
 .wrap {
   font-family: "Gilroy", sans-serif;
   font-size: 18px;
   line-height: 23px;
   border-bottom: 1px solid #929292;
 }
-
 .faq-table {
   height: auto;
 }
-
 label {
   width: 100%;
 }
-
 .title {
   display: inline;
   font-style: normal;
@@ -504,76 +455,62 @@ label {
   font-size: 20px;
   line-height: 72px;
 }
-
 .text {
   width: 100%;
   overflow: hidden;
   height: 0;
 }
-
 .check {
   display: none;
 }
-
 .check:checked ~ .text {
   height: auto;
 }
-
 .check:checked ~ svg {
   transform: rotate(180deg);
   transition: 0.2s;
 }
-
 .footer {
   width: 100%;
   padding: 50px 0;
   border-top: 1px solid #929292;
 }
-
 .contacts {
   display: flex;
   justify-content: center;
 }
-
 .footer-logo {
   margin-bottom: 51px;
 }
-
 .information-table-wrap {
   display: flex;
   justify-content: center;
 }
-
 .information-table {
   width: 100%;
   display: flex;
   padding: 0 calc(50% - 800px);
   border-bottom: 1px solid #929292;
 }
-
 .information-categories {
   display: flex;
   flex-direction: column;
   color: #929292;
   margin-right: auto;
 }
-
 .information-links {
   text-decoration: none;
   color: #929292;
   margin: 0 0 20px 0;
 }
-
 .information-links:first-child {
   margin-top: 40px;
 }
-
 .information-links:last-child {
   margin-bottom: 95px;
 }
 .copy-right{
   padding: 0 calc(50% - 100px);
-
 }
 .footer-adaptive{
 width: 100%;
@@ -588,13 +525,6 @@ padding: 50px calc(50% - 520px);
   overflow: hidden;
   height: 0;
 }
-
-
-
-
-
-
-
 .blog-body {
   display: flex;
   flex-direction: column;
@@ -618,7 +548,6 @@ padding: 50px calc(50% - 520px);
 .blog-cards-wrap:last-child{
   margin-bottom: 250px;
 }
-
 .blog-card-discription {
   height: 223px;
   width: auto;
@@ -626,13 +555,11 @@ padding: 50px calc(50% - 520px);
   z-index: 2;
   padding: 15px 15px 0 15px;
 }
-
 .blog-card-title {
   font-family: "Gilroy", sans-serif;
   font-size: 25px;
   font-weight: bold;
 }
-
 .blog-card-text {
   font-size: 16px;
   line-height: 26px;
@@ -644,23 +571,12 @@ padding: 50px calc(50% - 520px);
   color: #fff;
   font-size: 16px;
 }
-
-
-
-
-
-
-
-
-
-
 .servise-body {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
 }
-
 .servise-main-screen {
   max-width: 100%;
   width: 100%;
@@ -677,23 +593,17 @@ padding: 50px calc(50% - 520px);
   margin-bottom: 122px;
   
 }
-
-
 .rent-title {
   z-index: 2;
   font-size: 60px;
   font-weight: bold;
 }
-
-
 .servise-discription-wrap{
   display: flex;
   flex-direction: column;
   justify-content: center;
   margin: 0 auto;
 }
-
-
 .servise-discription {
   width: 728px;
   font-size: 16px;
@@ -706,13 +616,11 @@ padding: 50px calc(50% - 520px);
   align-items: center;
   margin: 0 auto;
 }
-
 .burj-pic {
   display: flex;
   justify-content: center;
   margin-bottom: 82px;
 }
-
 .method-block {
   display: flex;
   flex-direction: column;
@@ -722,7 +630,6 @@ padding: 50px calc(50% - 520px);
   margin: 0 auto;
   margin-bottom: 104px;
 }
-
 .method-discription {
   width: 728px;
   font-family: "Work-sans", sans-serif;
@@ -730,13 +637,11 @@ padding: 50px calc(50% - 520px);
   line-height: 26px;
   color: #929292
 }
-
 .method-title {
   font-size: 25px;
   font-family: "Gilroy", sans-serif;
   margin-bottom: 50px;
 }
-
 .paul-quote {
   display: flex;
   flex-direction: column;
@@ -749,7 +654,6 @@ padding: 50px calc(50% - 520px);
   height: 230px;
   margin-bottom: 122px;
 }
-
 .quote-text{
   font-size: 20px;
 }
@@ -765,7 +669,6 @@ padding: 50px calc(50% - 520px);
 .category-beach-pics-wrap{
   display: flex;
   justify-content: center;
-
 }
 .category-beach-pics-grid{
   display: grid;
@@ -783,7 +686,6 @@ padding: 50px calc(50% - 520px);
   display: flex;
   justify-content: center;
   margin-bottom: 50px;
-
 }
 .service-benefits-table{
   display: flex;
@@ -804,7 +706,6 @@ padding: 50px calc(50% - 520px);
   font-size: 16px;
   line-height: 21px;
   margin-left: 24px;
-  
 }
 .ul:not(p){
   margin-right: 90px;
@@ -816,7 +717,6 @@ padding: 50px calc(50% - 520px);
   justify-self: center;
   flex-direction: column;
   margin-bottom: 100px;
-
 }
 .challange-tiitle{
   margin-bottom: 50px;
@@ -836,13 +736,6 @@ padding: 50px calc(50% - 520px);
   font-size: 16px;
   color: #929292;
 }
-  
-
-
-
-
-
-
 .category-preview{
   margin: 0 auto;
   display: flex;
@@ -873,11 +766,9 @@ padding: 50px calc(50% - 520px);
   align-items: center;
   max-width: 100%;
   padding: 50px calc(50% - 900px);
-  
 }
 .all-apartments-category:last-child{
   margin-bottom: 184px;
-
 }
 .all-apartments-category-title{
   font-size: 60px;
@@ -917,7 +808,6 @@ padding: 50px calc(50% - 520px);
   align-items: flex-end;
   width: 426px;
   height: 433px;
-
 }
 .all-apartments-category-cards-third-card{
   display: flex;
@@ -942,7 +832,6 @@ align-items: center;
 }
 .category-cards-wrap:last-child{
   margin-bottom: 210px;
-
 }
 .best-offers-title{
   margin-bottom: 41px;
@@ -961,8 +850,8 @@ height: 296px;
 width: auto;
 border: 1px solid #FCD54C;
 z-index: 2;
-padding: 39px 15px 0 38px;}
-
+padding: 39px 15px 0 38px;
+}
 .offer-yellow-part{
   background-color: #FCD54C;
   color: #000000;
@@ -992,30 +881,10 @@ padding: 39px 15px 0 38px;}
   font-size: 25px;
   margin: 80px 0 50px 0;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 .contact-preview{
   padding: 0 calc(50% - 900px);
   position: relative;
   margin-bottom: 211px;
-
 }
 .map{
   overflow:hidden;
@@ -1024,7 +893,6 @@ padding: 39px 15px 0 38px;}
   height:0;
   display: flex;
   justify-content: center;
-
 }
 .map iframe{
   left:0;
@@ -1103,7 +971,6 @@ padding: 39px 15px 0 38px;}
   width: 1110px;
   height: 218px;
 }
-
 .book-button {
   width: 165px;
   height: 41px;
@@ -1121,11 +988,6 @@ padding: 39px 15px 0 38px;}
   grid-area: emale;
   margin-right: 30px;
 }
-
-
-
-
-
 @media(max-width:1800px){
 .project-cards {
   grid-template-columns: repeat(2, 430px);
@@ -1163,7 +1025,6 @@ margin: 0 auto;
 }
 .map{
   height:600px;
-
 }
 }
 @media(max-width:1200px){
@@ -1210,7 +1071,6 @@ display: block;
   flex-direction: column;
   background-color: #272727;
 }
-
 }
 @media(max-width:1161px){
   .useful-articles-cards{
@@ -1275,7 +1135,6 @@ display: block;
  .send-subject-input-contact{
   width: 300px;
 }
-
 }
 @media(max-width:925px){
   h1 {
@@ -1435,7 +1294,6 @@ h1 {
   font-size: 20px;
   font-weight:400;
 }
-
 .contact-card-adress {
   font-size: 16px;
   color: #929292;
@@ -1579,6 +1437,6 @@ h1 {
 }
 .category-preview-title {
   font-size: 40px;
-  
+
 }
 }
